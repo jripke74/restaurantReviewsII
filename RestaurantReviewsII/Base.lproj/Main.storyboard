@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9R6-yY-yhT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -59,6 +59,9 @@
                         <viewLayoutGuide key="safeArea" id="9rM-YY-m2Z"/>
                     </view>
                     <navigationItem key="navigationItem" id="4o3-W0-sZT"/>
+                    <connections>
+                        <outlet property="tableView" destination="qNW-da-jSf" id="s6L-xY-lrg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uu-3O-ZlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,7 +152,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="oTB-vw-uTF" userLabel="ReviewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="oTB-vw-uTF" userLabel="ReviewCell" customClass="ReviewCell" customModule="RestaurantReviewsII" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="188" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTB-vw-uTF" id="JjL-CO-uiO" customClass="ReviewCell" customModule="RestaurantReviewsII" customModuleProvider="target">
@@ -179,6 +182,10 @@
                                         <constraint firstItem="yS4-LU-eOd" firstAttribute="leading" secondItem="JjL-CO-uiO" secondAttribute="leading" constant="16" id="sbb-NT-bMw"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="reviewLabel" destination="2D8-vk-Zup" id="bhS-d4-HEb"/>
+                                    <outlet property="userImageView" destination="yS4-LU-eOd" id="d4m-Ry-Eh3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -186,6 +193,14 @@
                             <outlet property="delegate" destination="f1O-Ep-0If" id="u53-jL-2jW"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="categoriesLabel" destination="qNI-uM-7gf" id="pA7-oS-wPM"/>
+                        <outlet property="currentHoursStatusLabel" destination="2tQ-aj-DHc" id="tSN-2g-aGA"/>
+                        <outlet property="hoursLabel" destination="uvZ-by-NtN" id="dfQ-0I-GON"/>
+                        <outlet property="priceLabel" destination="kkA-RX-zpg" id="44W-gB-c2A"/>
+                        <outlet property="ratingsCountLabel" destination="TwO-Aw-6D7" id="KAJ-wU-tfb"/>
+                        <outlet property="restaurantNameLabel" destination="PtJ-xg-oB3" id="PDR-45-Cbd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4f-QS-84C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
