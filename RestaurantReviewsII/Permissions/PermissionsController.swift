@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import OAuth2
 
 class PermissionsController: UIViewController {
+    
+    let oauth = OAuth2ClientCredentials(settings: [
+        "client_id": "33k7tJE1767ON7Ta0E_p6Q",
+        "client_secret": "2Kf4pGaWXDc4sPz52xPaWole3c1mDTfyID5iqEBGfmLxth6YOQN5637SVIKo4laq",
+        "authorize_uri": "https://api.yelp.com/oauth2/token",
+        "secret_in_body": true,
+        "keychain": false
+        ])
     
     var isAuthorizedForLocation: Bool
     var isAuthenticatedWithToken: Bool
