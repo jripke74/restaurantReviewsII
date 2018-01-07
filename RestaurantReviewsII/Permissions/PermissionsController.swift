@@ -108,7 +108,19 @@ class PermissionsController: UIViewController {
     }
     
     @objc func requestOAuthToken() {
-        
+        oauth.authorize { authParams, error in
+            if let params = authParams {
+                guard let token = params["access_token"] as? String, let expiration = params["expires_in"] as? TimeInterval else { return }
+                let account = YelpAccount(accessToken: token, expiration: expiration, grantDate: Date())
+                do {
+                    try? account.save()
+                    self.oauthTokenButton.setTitle("OAuth Token Granted", for: .disabled)
+                    self.oauthTokenButton.isEnabled = false
+                }
+            } else {
+                print("Authorization was cancelled or went wrong: \(error!)")
+            }
+        }
     }
     
     @objc func dismissPermissions() {
