@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892BDC2A20028F2C007A505E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BDC2920028F2C007A505E /* LocationManager.swift */; };
 		895D789C1FEC7E4700E2DD23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D789B1FEC7E4700E2DD23 /* AppDelegate.swift */; };
 		895D78A11FEC7E4700E2DD23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895D789F1FEC7E4700E2DD23 /* Main.storyboard */; };
 		895D78A31FEC7E4700E2DD23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895D78A21FEC7E4700E2DD23 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		892BDC2920028F2C007A505E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		895D78981FEC7E4700E2DD23 /* RestaurantReviewsII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantReviewsII.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		895D789B1FEC7E4700E2DD23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895D78A01FEC7E4700E2DD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				895D78B21FEC803700E2DD23 /* PermissionsController.swift */,
 				8966106920000A7F0010CB9C /* YelpAccount.swift */,
+				892BDC2920028F2C007A505E /* LocationManager.swift */,
 			);
 			path = Permissions;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				89F98DD41FEEF08F00537E2D /* JSONDecodable.swift in Sources */,
 				89F98DEA1FEF3B0C00537E2D /* Address.swift in Sources */,
 				895D789C1FEC7E4700E2DD23 /* AppDelegate.swift in Sources */,
+				892BDC2A20028F2C007A505E /* LocationManager.swift in Sources */,
 				89F98DD01FEEE2A200537E2D /* YelpSearchResultsDataSource.swift in Sources */,
 				89F98DE41FEF379D00537E2D /* YelpTransaction.swift in Sources */,
 				89F98DDE1FEF34AD00537E2D /* ReviewCellViewModel.swift in Sources */,
