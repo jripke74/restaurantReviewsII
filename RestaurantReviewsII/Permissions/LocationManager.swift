@@ -39,6 +39,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     weak var delegate: LocationManagerDelegate?
     
     init(delegate: LocationManagerDelegate?, permissionsDelegate: LocationPermissionsDelegate?) {
+        self.delegate = delegate
         self.permissionsDelegate = permissionsDelegate
         super.init()
         manager.delegate = self

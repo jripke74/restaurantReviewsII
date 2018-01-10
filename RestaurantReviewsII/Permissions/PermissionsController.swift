@@ -113,10 +113,6 @@ class PermissionsController: UIViewController, LocationPermissionsDelegate {
             try locationManager.requestLocationAuthorization()
         } catch LocationError.disallowedByUser {
             // show alert to users
-        } catch LocationError.unableToFindLocation {
-            
-        } catch LocationError.unkownError {
-            
         } catch let error {
             print("Location Authorization Error: \(error.localizedDescription)")
         }
