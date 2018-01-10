@@ -95,7 +95,7 @@ extension YelpSearchController {
     }
 }
 
-// MARK: Location Manger Delegate
+// MARK: Location Manager Delegate
 extension YelpSearchController: LocationManagerDelegate {
     func obtainedCoordinates(_ coordinate: Coordinate) {
         self.coordinate = coordinate

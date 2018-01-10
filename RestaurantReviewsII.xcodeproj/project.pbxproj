@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		892BDC2A20028F2C007A505E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BDC2920028F2C007A505E /* LocationManager.swift */; };
+		892BDC2C2006BA67007A505E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BDC2B2006BA67007A505E /* APIClient.swift */; };
 		895D789C1FEC7E4700E2DD23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D789B1FEC7E4700E2DD23 /* AppDelegate.swift */; };
 		895D78A11FEC7E4700E2DD23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895D789F1FEC7E4700E2DD23 /* Main.storyboard */; };
 		895D78A31FEC7E4700E2DD23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895D78A21FEC7E4700E2DD23 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		892BDC2920028F2C007A505E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		892BDC2B2006BA67007A505E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		895D78981FEC7E4700E2DD23 /* RestaurantReviewsII.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantReviewsII.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		895D789B1FEC7E4700E2DD23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895D78A01FEC7E4700E2DD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				89F98DD31FEEF08F00537E2D /* JSONDecodable.swift */,
 				89F98DED1FEF3FEB00537E2D /* Endpoint.swift */,
+				892BDC2B2006BA67007A505E /* APIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				89F98DDC1FEF33B500537E2D /* ReviewCell.swift in Sources */,
 				89F98DDA1FEF318400537E2D /* YelpReviewsDataSource.swift in Sources */,
 				89F98DE81FEF3A7100537E2D /* Coordinate.swift in Sources */,
+				892BDC2C2006BA67007A505E /* APIClient.swift in Sources */,
 				895EA86B1FEDC0D3006951AD /* YelpSearchController.swift in Sources */,
 				89F98DD21FEEF03700537E2D /* YelpBusiness.swift in Sources */,
 				8966106A20000A7F0010CB9C /* YelpAccount.swift in Sources */,
