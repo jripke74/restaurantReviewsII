@@ -30,4 +30,21 @@ class YelpClient: APIClient {
             return businesses.flatMap { YelpBusiness(json: $0) }
         }, completion: comletion)
     }
+    
+    func businessWithId(_ id: String, completion: @escaping (Result<YelpBusiness, APIError>) -> Void) {
+        let endpoint = Yelp.business(id: id)
+        let request = endpoint.requestWithAuthorizationHeader(oauthToken: self.token)
+        fetch(with: request, parse: { json -> YelpBusiness? in
+            return YelpBusiness(json: json)
+        }, completion: completion)
+    }
+    
+    func updateWithHoursAndPhotos(_ business: YelpBusiness, completion: @escaping (Result<YelpBusiness, APIError>) -> Void) {
+        let endpoint = Yelp.business(id: business.id)
+        let request = endpoint.requestWithAuthorizationHeader(oauthToken: self.token)
+        fetch(with: request, parse: { json -> YelpBusiness? in
+            business.updateWithHoursAndPhotos(json: json)
+            return business
+        }, completion: completion)
+    }
 }
