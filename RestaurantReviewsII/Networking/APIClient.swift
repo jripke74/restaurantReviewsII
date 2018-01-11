@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol APIClient {
-    var session: URLSession { get }
-}
-
 enum APIError: Error {
     case requestFailed
     case jsonConversionFailure
@@ -29,6 +25,13 @@ enum APIError: Error {
         }
     }
 }
+
+protocol APIClient {
+    var session: URLSession { get }
+    func fetch<T: JSONDecodable>(with request: URLRequest, parse: @escaping (JSON) -> T?, completion: @escaping (Result<T, APIError>) -> Void)
+    func fetch<T: JSONDecodable>(with request: URLRequest, parse: @escaping (JSON) -> [T], completion: @escaping (Result<[T], APIError>) -> Void)
+}
+
 
 extension APIClient {
     typealias JSON = [String: AnyObject]
