@@ -16,6 +16,7 @@
 		895D78B31FEC803700E2DD23 /* PermissionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D78B21FEC803700E2DD23 /* PermissionsController.swift */; };
 		895EA86B1FEDC0D3006951AD /* YelpSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895EA86A1FEDC0D3006951AD /* YelpSearchController.swift */; };
 		8965582C2007F07600289644 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965582B2007F07600289644 /* Result.swift */; };
+		8965582E2007FAB800289644 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965582D2007FAB800289644 /* YelpClient.swift */; };
 		89661067200001900010CB9C /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89661066200001900010CB9C /* OAuth2.framework */; };
 		8966106A20000A7F0010CB9C /* YelpAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966106920000A7F0010CB9C /* YelpAccount.swift */; };
 		8966106C2000189D0010CB9C /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8966106B2000189D0010CB9C /* Locksmith.framework */; };
@@ -49,6 +50,7 @@
 		895D78B21FEC803700E2DD23 /* PermissionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsController.swift; sourceTree = "<group>"; };
 		895EA86A1FEDC0D3006951AD /* YelpSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchController.swift; sourceTree = "<group>"; };
 		8965582B2007F07600289644 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8965582D2007FAB800289644 /* YelpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
 		89661066200001900010CB9C /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2.framework; path = Carthage/Build/iOS/OAuth2.framework; sourceTree = "<group>"; };
 		8966106920000A7F0010CB9C /* YelpAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAccount.swift; sourceTree = "<group>"; };
 		8966106B2000189D0010CB9C /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				89F98DED1FEF3FEB00537E2D /* Endpoint.swift */,
 				892BDC2B2006BA67007A505E /* APIClient.swift */,
 				8965582B2007F07600289644 /* Result.swift */,
+				8965582D2007FAB800289644 /* YelpClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				89F98DEC1FEF3D0300537E2D /* BusinessHours.swift in Sources */,
 				89F98DDC1FEF33B500537E2D /* ReviewCell.swift in Sources */,
 				89F98DDA1FEF318400537E2D /* YelpReviewsDataSource.swift in Sources */,
+				8965582E2007FAB800289644 /* YelpClient.swift in Sources */,
 				89F98DE81FEF3A7100537E2D /* Coordinate.swift in Sources */,
 				892BDC2C2006BA67007A505E /* APIClient.swift in Sources */,
 				895EA86B1FEDC0D3006951AD /* YelpSearchController.swift in Sources */,
