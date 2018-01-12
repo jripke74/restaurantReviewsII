@@ -18,5 +18,21 @@ class YelpBusinessDetailsOperation: Operation {
         super.init()
     }
     
+    private var _finished = false
     
+    override private(set) var isFinished: Bool {
+        get {
+            return _finished
+        }
+        set {
+            _finished = newValue
+        }
+    }
+    
+    override func start() {
+        if isCancelled {
+            isFinished = true
+            return
+        }
+    }
 }
