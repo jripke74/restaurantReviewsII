@@ -47,4 +47,13 @@ class YelpClient: APIClient {
             return business
         }, completion: completion)
     }
+    
+    func reviews(for business: YelpBusiness, completion: @escaping (Result<[YelpReview], APIError>) -> Void) {
+        let endpoint = Yelp.reviews(businessId: business.id)
+        let request = endpoint.requestWithAuthorizationHeader(oauthToken: self.token)
+        fetch(with: request, parse: { json -> [YelpReview] in
+            guard let reviews = json["reviews"] as? [[String: Any]] else { return [] }
+            return reviews.flatMap { YelpReview(json: $0) }
+        }, completion: completion)
+    }
 }
