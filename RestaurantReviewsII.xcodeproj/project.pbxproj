@@ -22,6 +22,7 @@
 		8966106A20000A7F0010CB9C /* YelpAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966106920000A7F0010CB9C /* YelpAccount.swift */; };
 		8966106C2000189D0010CB9C /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8966106B2000189D0010CB9C /* Locksmith.framework */; };
 		8974B1C6200BD040006EAE4B /* YelpBusinessReviewsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8974B1C5200BD040006EAE4B /* YelpBusinessReviewsOperation.swift */; };
+		8974B1C8200D1549006EAE4B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8974B1C7200D1549006EAE4B /* MapKit.framework */; };
 		89F98DD01FEEE2A200537E2D /* YelpSearchResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F98DCF1FEEE2A200537E2D /* YelpSearchResultsDataSource.swift */; };
 		89F98DD21FEEF03700537E2D /* YelpBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F98DD11FEEF03700537E2D /* YelpBusiness.swift */; };
 		89F98DD41FEEF08F00537E2D /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F98DD31FEEF08F00537E2D /* JSONDecodable.swift */; };
@@ -58,6 +59,7 @@
 		8966106920000A7F0010CB9C /* YelpAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAccount.swift; sourceTree = "<group>"; };
 		8966106B2000189D0010CB9C /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
 		8974B1C5200BD040006EAE4B /* YelpBusinessReviewsOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusinessReviewsOperation.swift; sourceTree = "<group>"; };
+		8974B1C7200D1549006EAE4B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		89F98DCF1FEEE2A200537E2D /* YelpSearchResultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchResultsDataSource.swift; sourceTree = "<group>"; };
 		89F98DD11FEEF03700537E2D /* YelpBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpBusiness.swift; sourceTree = "<group>"; };
 		89F98DD31FEEF08F00537E2D /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8966106C2000189D0010CB9C /* Locksmith.framework in Frameworks */,
+				8974B1C8200D1549006EAE4B /* MapKit.framework in Frameworks */,
 				89661067200001900010CB9C /* OAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +189,7 @@
 		896610652000018F0010CB9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8974B1C7200D1549006EAE4B /* MapKit.framework */,
 				8966106B2000189D0010CB9C /* Locksmith.framework */,
 				89661066200001900010CB9C /* OAuth2.framework */,
 			);
@@ -226,6 +230,11 @@
 					895D78971FEC7E4700E2DD23 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
