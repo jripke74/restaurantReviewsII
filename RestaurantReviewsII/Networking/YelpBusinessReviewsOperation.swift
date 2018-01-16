@@ -59,7 +59,7 @@ class YelpBusinessReviewsOperation: Operation {
                 self.isExecuting = false
                 self.isFinished = true
             case .failure(let error):
-                print(error)
+                print("this is it \(error)")
                 self.isExecuting = false
                 self.isFinished = true
             }

@@ -32,9 +32,11 @@ extension YelpAccount {
         static let expirationPeriod = "expirationPeriod"
         static let grantDate = "grantDate"
     }
+    
     func save() throws {
         try Locksmith.saveData(data: [Keys.token: accessToken, Keys.expirationPeriod: expiration, Keys.grantDate: grantDate.timeIntervalSince1970], forUserAccount: YelpAccount.service)
     }
+    
     static func loadFromKeychain() -> YelpAccount? {
         guard let dictionary = Locksmith.loadDataForUserAccount(userAccount: YelpAccount.service),
         let token = dictionary[Keys.token] as? String,

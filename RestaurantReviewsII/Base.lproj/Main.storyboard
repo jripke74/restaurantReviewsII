@@ -49,9 +49,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="f1O-Ep-0If" kind="show" identifier="showBusiness" id="rgd-DY-LFD"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -69,7 +66,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="4o3-W0-sZT"/>
                     <connections>
+                        <outlet property="mapView" destination="hdf-KP-VDc" id="wTf-zW-HKA"/>
                         <outlet property="tableView" destination="qNW-da-jSf" id="s6L-xY-lrg"/>
+                        <segue destination="f1O-Ep-0If" kind="show" identifier="showBusiness" id="yIX-Zo-zdY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uu-3O-ZlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
